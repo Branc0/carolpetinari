@@ -1,32 +1,80 @@
 body {
     //font-family: 'Sunflower', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 h2, h3 {
     font-family: 'Sunflower', sans-serif;
 }
 
-h2{
+h2 {
+    font-size: 45px;
     &:before{
         content: "" ;
         width: 23px;
     }
 }
-header{
+
+.pl-pattern {   
+    padding: 0 8.2% !important;
+   }   
+
+header {
     background: #d7d7d7;
-    //background-image:;
     min-height: 100vh;
+    position: relative;
+    
+    .slick-slide{
+        color: #fff; 
+        height: 100vh;
+    }
+
+    .banner {
+        bottom: 0;
+        color: white;
+        padding: 0 8.2%;
+        position: absolute; 
+    }
+
+    svg {
+        height: 50px;
+        width:50px;
+        path {
+            fill: #fff; 
+        }
+    }
+    .card-values{
+        background: rgba(#000, 0.4);
+    }
 }
 
 .section-about{
-
+    .about-text {
+        padding-left: 8.2%
+    }
 }
 
 .section-projects{
+    background: #f9f9f9; 
+    padding: 50px 0;
+    height: 100vh;
 
 }
 
 .section-contact{
+    height: 50vh;
+    .a-telefone{
+        font-size: 30px;
+        font-family: 'Sunflower';
+        font-weight: 300;
+    }
+    svg{
+       
+    }
+}
 
+footer {
+    background: black;
+    height: 10vh;
 }
