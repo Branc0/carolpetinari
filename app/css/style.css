@@ -4,6 +4,10 @@ body {
 h2, h3 {
   font-family: 'Sunflower', sans-serif; }
 
+h2:before {
+  content: "";
+  width: 23px; }
+
 header {
   background: #d7d7d7;
   min-height: 100vh; }
