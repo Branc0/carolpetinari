@@ -11,6 +11,9 @@ h2 {
     content: "";
     width: 23px; }
 
+p {
+  font-size: 18px; }
+
 .pl-pattern {
   padding: 0 8.2% !important; }
 
@@ -18,9 +21,11 @@ header {
   background: #d7d7d7;
   min-height: 100vh;
   position: relative; }
+  header .navbar {
+    height: 10vh; }
   header .slick-slide {
     color: #fff;
-    height: 100vh; }
+    height: 90vh; }
   header .banner {
     bottom: 0;
     color: white;
@@ -34,20 +39,42 @@ header {
   header .card-values {
     background: rgba(0, 0, 0, 0.4); }
 
-.section-about .about-text {
-  padding-left: 8.2%; }
+.section-about {
+  padding: 100px 0; }
+  .section-about .about-text {
+    padding-left: 8.2%; }
+  .section-about a {
+    color: #212529; }
 
 .section-projects {
-  background: #f9f9f9;
+  background: #003057;
+  color: #fff;
   padding: 50px 0;
   height: 100vh; }
 
 .section-contact {
-  height: 50vh; }
+  height: 50vh;
+  padding: 0 15.2%;
+  background: #d7d7d7; }
   .section-contact .a-telefone {
     font-size: 30px;
     font-family: 'Sunflower';
     font-weight: 300; }
+  .section-contact a {
+    color: #212529;
+    text-decoration: none; }
+    .section-contact a:hover svg path {
+      fill: #003057; }
+  .section-contact svg {
+    height: 50px;
+    width: 50px;
+    transition: .4s; }
+    .section-contact svg path {
+      fill: #212529; }
+  .section-contact .ic-whats {
+    padding-left: 10px;
+    height: 30px !important;
+    width: 30px !important; }
 
 footer {
   background: black;

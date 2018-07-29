@@ -16,6 +16,9 @@ h2 {
     }
 }
 
+p{
+    font-size: 18px;
+}
 .pl-pattern {   
     padding: 0 8.2% !important;
    }   
@@ -25,9 +28,13 @@ header {
     min-height: 100vh;
     position: relative;
     
+    .navbar{
+        height: 10vh;
+    }
+
     .slick-slide{
         color: #fff; 
-        height: 100vh;
+        height: 90vh;
     }
 
     .banner {
@@ -50,13 +57,18 @@ header {
 }
 
 .section-about{
+    padding: 100px 0;
     .about-text {
         padding-left: 8.2%
+    }
+    a{
+        color: #212529
     }
 }
 
 .section-projects{
-    background: #f9f9f9; 
+    background:#003057; 
+    color: #fff; 
     padding: 50px 0;
     height: 100vh;
 
@@ -64,14 +76,42 @@ header {
 
 .section-contact{
     height: 50vh;
+    padding: 0 15.2%;
+    background: #d7d7d7;
+    
     .a-telefone{
         font-size: 30px;
         font-family: 'Sunflower';
         font-weight: 300;
     }
-    svg{
-       
+  
+    a{
+        color: #212529;
+        text-decoration: none;
+        &:hover{
+            svg{
+                path{
+                    fill: #003057;
+                }
+            }
+        }
     }
+
+    svg{
+        height: 50px;
+        width: 50px; 
+        transition: .4s;
+       path{
+           fill: #212529;
+       }
+    }
+    
+    .ic-whats{
+        padding-left: 10px ;
+        height: 30px !important;
+        width: 30px !important;
+    }
+
 }
 
 footer {
