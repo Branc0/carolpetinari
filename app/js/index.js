@@ -8,10 +8,17 @@ $(".slick-header").slick({
 
 $(".slick-projects").slick({
     infinite: true,
-    arrows:true,
-    
+    arrows:false,
 })
 
-$(".slick-header").slick({
-    infinite: true,
+$(document).ready(function(){
+
+$(".menu-projects a").click(function(e){
+    e.preventDefault();
+    $(".active-project").removeClass("active-project")
+    $(this).addClass("active-project")
+    let slideIndex = $(this).attr('id');
+    $( '.slick-projects' ).slick('slickGoTo',parseInt(slideIndex) ); 
+});
+
 })

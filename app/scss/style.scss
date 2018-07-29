@@ -56,21 +56,52 @@ header {
     }
 }
 
-.section-about{
+.section-about {
     padding: 100px 0;
     .about-text {
         padding-left: 8.2%
     }
+    
+
+    
     a{
         color: #212529
     }
 }
 
-.section-projects{
+.section-projects {
     background:#003057; 
     color: #fff; 
     padding: 50px 0;
     height: 100vh;
+
+    svg {
+        height: 50px;
+        width: 50px;
+        path {
+            fill: #fff;
+        }
+    }
+
+    .text-project{
+      padding-left: 8.2%;  
+    }
+    
+    .active-project{
+      svg {
+        path {
+            fill: yellow;
+        }
+      }  
+    }
+}
+
+
+.section-construction{
+
+}
+
+.section-myhouse{
 
 }
 

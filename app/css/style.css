@@ -51,6 +51,15 @@ header {
   color: #fff;
   padding: 50px 0;
   height: 100vh; }
+  .section-projects svg {
+    height: 50px;
+    width: 50px; }
+    .section-projects svg path {
+      fill: #fff; }
+  .section-projects .text-project {
+    padding-left: 8.2%; }
+  .section-projects .active-project svg path {
+    fill: yellow; }
 
 .section-contact {
   height: 50vh;
