@@ -1,8 +1,10 @@
 @charset "UTF-8";
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  overflow-x: hidden; }
+  font-weight: 300; }
+
+.overkill {
+  overflow-x: hidden !important; }
 
 h2, h3 {
   font-family: 'Sunflower', sans-serif; }
@@ -90,7 +92,7 @@ header {
   min-height: 100vh;
   position: relative; }
   header .navbar {
-    height: 10vh;
+    min-height: 10vh;
     box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.4); }
   header .nav-link:hover {
     color: #EE6C10 !important; }
@@ -109,14 +111,17 @@ header {
       fill: #fff; }
   header .card-values {
     background: #003057; }
+  header h2 {
+    width: 300px; }
 
 main img {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); }
 
 .section-about {
   padding: 100px 0; }
-  .section-about .about-text {
-    padding-left: 8.2%; }
+  @media (min-width: 1200px) {
+    .section-about .about-text {
+      padding-left: 8.2%; } }
   .section-about a {
     color: #003057; }
     .section-about a:hover {
@@ -147,8 +152,9 @@ main img {
     margin-bottom: 10px; }
     .section-projects svg path {
       fill: #fff; }
-  .section-projects .text-project {
-    padding-right: 8.2%; }
+  @media (min-width: 1200px) {
+    .section-projects .text-project {
+      padding-right: 8.2%; } }
   .section-projects .active-project {
     color: #EE6C10; }
     .section-projects .active-project svg path {
@@ -156,8 +162,9 @@ main img {
 
 .section-construction {
   padding: 100px 0; }
-  .section-construction .construction-text {
-    padding-left: 8.2%; }
+  @media (min-width: 1200px) {
+    .section-construction .construction-text {
+      padding-left: 8.2%; } }
   .section-construction .slick-slide {
     position: relative; }
 
@@ -165,12 +172,16 @@ main img {
   background-color: #003057;
   color: #fff;
   padding: 50px 0; }
-  .section-myhouse .myhouse-text {
-    padding-right: 8.2%; }
+  @media (min-width: 1200px) {
+    .section-myhouse .myhouse-text {
+      padding-right: 8.2%; } }
   .section-myhouse .myhouse-img {
     box-shadow: unset;
     height: auto;
     width: 165px; }
+    @media (max-width: 1200px) {
+      .section-myhouse .myhouse-img {
+        margin-bottom: 1rem; } }
   .section-myhouse .myhouse-list {
     list-style: none;
     padding: 0;
@@ -189,9 +200,15 @@ main img {
   transform: translate(-50%); }
 .section-portfolio .slick-portfolio {
   width: 80%; }
+  @media (max-width: 1200px) {
+    .section-portfolio .slick-portfolio {
+      width: 100%; } }
 
 .section-contact {
   padding: 0 20%; }
+  @media (max-width: 1200px) {
+    .section-contact {
+      padding: 0; } }
   .section-contact hr {
     background-color: #EE6C10; }
   .section-contact .underline::after {

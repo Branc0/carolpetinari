@@ -75,7 +75,9 @@ $('a[href*="#"]').not('[href="#0"]').click(function(event) {
 
 $(document).ready(function(){
 
-
+ AOS.init({
+     disable: 'mobile',
+ });
 
 $(".menu-projects a").click(function(e){
     e.preventDefault();
@@ -83,6 +85,10 @@ $(".menu-projects a").click(function(e){
     $(this).addClass("active-project")
     let slideIndex = $(this).attr('id');
     $( '.slick-projects' ).slick('slickGoTo',parseInt(slideIndex) ); 
+});
+
+$(".nav-link").click(function(){
+    $(".navbar-toggler").click();
 });
 
 })

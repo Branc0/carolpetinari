@@ -1,8 +1,14 @@
+
 body {
     //font-family: 'Sunflower', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    overflow-x: hidden}
+
+}
+
+.overkill {
+    overflow-x: hidden !important;
+}
 
 h2, h3 {
     font-family: 'Sunflower', sans-serif;
@@ -118,7 +124,7 @@ header {
     position: relative;
     
     .navbar{
-        height: 10vh;
+        min-height: 10vh;
         box-shadow: 3px 0px 5px  rgba(0, 0, 0, 0.4);
     }
 
@@ -151,6 +157,9 @@ header {
         //background: rgba(#003057, 0.4);
         background: #003057;
     }
+    h2{
+        width: 300px;
+    }
 }
 
 main{
@@ -162,7 +171,9 @@ main{
 .section-about {
     padding: 100px 0;
     .about-text {
-        padding-left: 8.2%
+        @media (min-width:1200px) {
+            padding-left: 8.2%;
+        }
     }
     
     a{
@@ -217,7 +228,9 @@ main{
     }
 
     .text-project {
-      padding-right: 8.2%;  
+        @media (min-width:1200px) {
+            padding-right: 8.2%;  
+        }
     }
     
     .active-project {
@@ -236,7 +249,9 @@ main{
 
 
     .construction-text{
-        padding-left:  8.2%;
+        @media (min-width:1200px) {
+            padding-left:  8.2%;
+        }
     }
     .slick-slide{
         position: relative;
@@ -249,12 +264,17 @@ main{
     color: #fff;
     padding: 50px 0;
     .myhouse-text {
-        padding-right: 8.2%;
+        @media (min-width:1200px) {
+            padding-right: 8.2%;
+        }
     }
     .myhouse-img {
         box-shadow: unset;
         height: auto;
         width: 165px;
+        @media (max-width:1200px) {
+            margin-bottom: 1rem; 
+        }
     }
    
     .myhouse-list {
@@ -282,12 +302,17 @@ main{
     }
     .slick-portfolio{
         width: 80%;
+        @media (max-width:1200px) {
+            width: 100%;
+        }
     }    
 }
 
-
 .section-contact{
     padding: 0 20%;
+    @media (max-width:1200px) {
+        padding: 0;
+    }
     
     hr{
         background-color: #EE6C10
@@ -347,7 +372,6 @@ main{
     }
 
 }
-
 
 footer {
     background: black;
