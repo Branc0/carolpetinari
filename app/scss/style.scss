@@ -154,11 +154,16 @@ header {
         }
     }
     .card-values{
-        //background: rgba(#003057, 0.4);
-        background: #003057;
+        //background: rgba(#0F152F, 0.4);
+        height: 10vh; 
+        background: #0F152F;
+        h4{
+            margin-bottom: 0;
+        }
     }
     h2{
         width: 300px;
+        text-shadow: 0px 0px 20px #212529;
     }
 }
 
@@ -177,7 +182,7 @@ main{
     }
     
     a{
-        color: #003057;
+        color: #0F152F;
         &:hover{
             color: #EE6C10;
             text-decoration: none;
@@ -195,7 +200,7 @@ main{
 }
 
 .section-projects {
-    background:#003057; 
+    background:#0F152F; 
     color: #fff; 
     padding: 50px 0;
 
@@ -241,6 +246,11 @@ main{
             }
         }  
     }
+
+    img {
+        height: 350px;
+        width:100%;
+    }
 }
 
 
@@ -260,7 +270,7 @@ main{
 }
 
 .section-myhouse {
-    background-color: #003057;
+    background-color: #0F152F;
     color: #fff;
     padding: 50px 0;
     .myhouse-text {
@@ -291,6 +301,10 @@ main{
             }
         }
     } 
+
+    img{
+       height: 440px;        
+    }
 }
 
 .section-portfolio{
@@ -306,6 +320,10 @@ main{
             width: 100%;
         }
     }    
+
+    img{
+        height: 80vh;
+    }
 }
 
 .section-contact{
@@ -344,7 +362,7 @@ main{
         text-decoration: none;
         svg{
             path{
-                fill: #003057;
+                fill: #0F152F;
             }
         }
         &:hover{
@@ -375,5 +393,11 @@ main{
 
 footer {
     background: black;
-    height: 10vh;
+    color: #e6e6e6;
+    p{
+        font-size: 12px;
+    }
+    a{
+        color: #EE6C10;
+    }
 }

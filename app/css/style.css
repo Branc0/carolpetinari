@@ -110,9 +110,13 @@ header {
     header svg path {
       fill: #fff; }
   header .card-values {
-    background: #003057; }
+    height: 10vh;
+    background: #0F152F; }
+    header .card-values h4 {
+      margin-bottom: 0; }
   header h2 {
-    width: 300px; }
+    width: 300px;
+    text-shadow: 0px 0px 20px #212529; }
 
 main img {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); }
@@ -123,7 +127,7 @@ main img {
     .section-about .about-text {
       padding-left: 8.2%; } }
   .section-about a {
-    color: #003057; }
+    color: #0F152F; }
     .section-about a:hover {
       color: #EE6C10;
       text-decoration: none; }
@@ -134,7 +138,7 @@ main img {
     transform-origin: 50% 50%; }
 
 .section-projects {
-  background: #003057;
+  background: #0F152F;
   color: #fff;
   padding: 50px 0; }
   .section-projects .underline::after {
@@ -159,6 +163,9 @@ main img {
     color: #EE6C10; }
     .section-projects .active-project svg path {
       fill: #EE6C10; }
+  .section-projects img {
+    height: 350px;
+    width: 100%; }
 
 .section-construction {
   padding: 100px 0; }
@@ -169,7 +176,7 @@ main img {
     position: relative; }
 
 .section-myhouse {
-  background-color: #003057;
+  background-color: #0F152F;
   color: #fff;
   padding: 50px 0; }
   @media (min-width: 1200px) {
@@ -194,6 +201,8 @@ main img {
         content: "✓ ";
         color: green;
         /* or whatever color you prefer */ }
+  .section-myhouse img {
+    height: 440px; }
 
 .section-portfolio .underline::after {
   left: 50%;
@@ -203,6 +212,8 @@ main img {
   @media (max-width: 1200px) {
     .section-portfolio .slick-portfolio {
       width: 100%; } }
+.section-portfolio img {
+  height: 80vh; }
 
 .section-contact {
   padding: 0 20%; }
@@ -226,7 +237,7 @@ main img {
     color: #212529;
     text-decoration: none; }
     .section-contact a svg path {
-      fill: #003057; }
+      fill: #0F152F; }
     .section-contact a:hover svg path {
       fill: #EE6C10; }
   .section-contact svg {
@@ -242,6 +253,10 @@ main img {
 
 footer {
   background: black;
-  height: 10vh; }
+  color: #e6e6e6; }
+  footer p {
+    font-size: 12px; }
+  footer a {
+    color: #EE6C10; }
 
 /*# sourceMappingURL=style.css.map */
