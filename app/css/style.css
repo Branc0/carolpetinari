@@ -163,9 +163,6 @@ main img {
     color: #EE6C10; }
     .section-projects .active-project svg path {
       fill: #EE6C10; }
-  .section-projects img {
-    height: 350px;
-    width: 100%; }
 
 .section-construction {
   padding: 100px 0; }

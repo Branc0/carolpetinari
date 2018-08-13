@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123795586-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123795586-1');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="css/index.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500|Sunflower:300" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
     <title>Carol Petinari</title>
 </head>
 <body>
@@ -17,11 +25,11 @@
 
     <nav class="pl-pattern fixed-top navbar justify-space-between navbar-expand-lg navbar-light bg-light">
 
-        <div class="col-4">
-            <h1 class=""><img src="img/logo.jpg" alt="Petinari"></h1>
+        <div class="col-5 col-xl-2 p-0">
+            <h1 class="mb-0"><img class="img-fluid my-1" src="img/logo.jpg" alt="Petinari Engenharia"></h1>
         </div>
 
-        <div class="col-8 pr-0 text-right">
+        <div class=" col-7  col-xl-10 pr-0 text-right">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,20 +50,20 @@
         <div class="slick-header h-100">
 
             <div class="slick-header-item">
-                <div class="row h-100 justify-content-center align-items-center pl-pattern m-0">
+                <div class="row h-100 justify-content-end align-items-center pl-pattern m-0" style="background: url('img/capa-2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center">
                     <h2>Concretizar o seu sonho é a nossa meta</h2>
                 </div>
             </div>
 
             <div class="slick-header-item">
-                <div class="row h-100 justify-content-center align-items-center pl-pattern m-0">
-                    <h2>Criatividade, custo befeficio e Eficiência</h2>
+                <div class="row h-100 justify-content-end align-items-center pl-pattern m-0" style="background: url('img/capa-1.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center">
+                    <h2>Criatividade, melhor custo benefício e eficiência</h2>
                 </div>
             </div>
 
             <div class="slick-header-item .item-project-architetic">
-                <div class="row h-100 justify-content-center align-items-center pl-pattern m-0 " style="background: url('img/slide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center" >
-                    <h2>Seja nosso Parceiro</h2>
+                <div class="row h-100 justify-content-end align-items-center pl-pattern m-0 " style="background: url('img/slide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center" >
+                    <h2>Porque nós amamos construir</h2>
                 </div>
             </div>
 
@@ -112,35 +120,14 @@
         <div class="container-fluid mt-5">
             <div class="row overkill">
 
-                <div class=" col-12 col-xl-5 about-text" data-aos="fade-right">
+                <div class=" col-12 col-xl-5 about-text" data-aos="fade-right" data-aos-delay="400">
                     <h2 class="text-uppercase underline mb-3">Quem somos</h2>
                     <p>A Petinari Engenharia veio para facilitar a vida de quem quer construir ou reformar, concentrando projetos e construção oferecemos maior comodidade e preocupação zero. Acompanhando o cliente desde a compra do terreno até a entrega das chaves.</p>
-                    <p>Nosso serviço combina Criatividade, visão e conhecimento técnico unidos à uma atitude positiva que acolhe qualquer desafio com determinação e integridade. Criando ambientes harmônicos e garantindo a melhor solução em custo benefício, modelo estrutural e método construtivo.</p>
+                    <p>Nosso serviço combina criatividade, visão e conhecimento técnico unidos à uma atitude positiva que acolhe qualquer desafio com determinação e integridade. Criando ambientes harmônicos e garantindo a melhor solução em custo benefício, modelo estrutural e método construtivo.</p>
                     <p>Conte com a gente! Venha fazer um <a href="#section-contact">orçamento</a> sem compromisso.</p>
-                    <!-- <h3>
-                        <a class="d-block my-2 a-collapse " data-toggle="collapse" data-target="#objetivo" href=""><span class="d-inline-block">➤</span> Objetivo</a>
-                    </h3>
-                    <div class="collapse" id="objetivo">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                             Vivamus non lobortis risus. Nunc dapibus posuere est, a
-                             porttitor quam fermentum eget. Ut et
-                            arcu vitae magna ornare imperdiet in at magna.
-                         </p>
-                    </div>
-
-                    <h3>
-                        <a  class="d-block my-2 a-collapse" data-toggle="collapse" data-target="#filosofia" href="" ><span class="d-inline-block">➤</span> Filosofia</a>
-                    </h3>
-                    <div class="collapse" id="filosofia">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vivamus non lobortis risus. Nunc dapibus posuere est, a
-                            porttitor quam fermentum eget. Ut et
-                            arcu vitae magna ornare imperdiet in at magna.
-                        </p>
-                    </div> -->
                 </div>
 
-                <div class="col-12 col-xl-7 px-0 pl-xl-3" data-aos="fade-left">
+                <div class="col-12 col-xl-7 px-0 pl-xl-3" data-aos="fade-left" >
                     <img class="img-fluid" src="img/quemsomos.jpg" alt="3 pessoas reunidas em uma mesa">
                 </div>
 
@@ -176,7 +163,7 @@
                     <a id="3" class="" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M431.1 500.9H80.9V11.1H431v489.8zM101.8 480h309.5V32H101.8v448z"/><path d="M383.1 184.1H128.9V66.3h254.3v117.8zm-233.4-20.8h213.6V87.2H149.7v76.1zM139.3 239.3h45.8v20.8h-45.8zM233.1 239.3h45.8v20.8h-45.8zM326.9 239.3h45.8v20.8h-45.8zM139.3 299.8h45.8v20.8h-45.8zM233.1 299.8h45.8v20.8h-45.8zM326.9 299.8h45.8v20.8h-45.8zM139.3 361.2h45.8V382h-45.8zM233.1 361.2h45.8V382h-45.8zM139.3 422.7h45.8v20.8h-45.8zM233.1 422.7h45.8v20.8h-45.8zM340.4 357.1h20.8v86.5h-20.8z"/></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.345 462.345"><g fill="#010002"><path d="M235.696 81.72c0-4.487-3.633-8.129-8.129-8.129-46.926 0-85.106 38.18-85.106 85.106 0 4.487 3.633 8.129 8.129 8.129 4.495 0 8.129-3.642 8.129-8.129 0-37.96 30.889-68.849 68.849-68.849 4.495 0 8.128-3.633 8.128-8.128z"/><path d="M108.305 158.697c0 27.897 9.015 54.274 26.076 76.279.081.106.171.211.26.317 35.579 49.389 26.735 72.881 26.735 72.921-1.902 4.064-.146 8.901 3.918 10.811 1.114.52 2.284.772 3.438.764 3.056 0 5.983-1.731 7.364-4.682 1.471-3.121 13.095-32.214-28.694-89.91-.187-.252-.374-.496-.585-.723-14.558-19.021-22.248-41.748-22.248-65.785 0-59.729 48.601-108.321 108.321-108.321S341.213 98.96 341.213 158.689c0 24.101-7.738 46.918-22.524 66.15-41.813 57.737-29.718 87.163-28.206 90.333 1.91 3.975 6.6 5.601 10.616 3.804s5.836-6.576 4.137-10.64c-.098-.236-9.413-24.199 26.483-73.775 16.842-21.915 25.751-48.146 25.751-75.864 0-68.695-55.884-124.579-124.579-124.579S108.305 90.011 108.305 158.697zM305.439 351.084v-6.909c0-11.014-8.966-19.972-19.972-19.972h-109.54c-11.014 0-19.972 8.958-19.972 19.972v6.909c0 11.006 8.958 19.972 19.972 19.972h109.549c11.006 0 19.963-8.958 19.963-19.972zm-133.227 0v-6.909c0-2.048 1.666-3.715 3.715-3.715h109.549c2.048 0 3.715 1.666 3.715 3.715v6.909c0 2.048-1.666 3.715-3.715 3.715H175.927c-2.049 0-3.715-1.666-3.715-3.715zM189.087 383.412c-4.495 0-8.129 3.642-8.129 8.129v21.468c0 3.186 1.861 6.072 4.755 7.397l43.805 19.988c1.073.488 2.219.732 3.373.732 1.187 0 2.374-.26 3.471-.78l43.927-20.728c2.845-1.341 4.658-4.202 4.658-7.348v-20.72c0-4.487-3.633-8.129-8.129-8.129s-8.129 3.642-8.129 8.129v15.574l-35.855 16.924-35.619-16.257V391.55c0-4.505-3.633-8.138-8.128-8.138zM422.263 305.581c2.666-3.609 1.894-8.698-1.715-11.364l-55.144-40.659c-3.617-2.666-8.698-1.902-11.364 1.715-2.666 3.609-1.894 8.698 1.715 11.364l55.144 40.659c1.455 1.073 3.146 1.585 4.82 1.585 2.488.008 4.951-1.138 6.544-3.3zM99.16 77.468c1.455 1.073 3.146 1.585 4.82 1.585 2.495 0 4.95-1.146 6.552-3.308 2.666-3.609 1.894-8.698-1.715-11.364l-56.388-41.57c-3.609-2.674-8.698-1.894-11.364 1.715-2.666 3.617-1.902 8.706 1.715 11.372l56.38 41.57zM101.721 250.761l-58.932 43.455c-3.609 2.666-4.381 7.755-1.715 11.364 1.593 2.162 4.056 3.308 6.552 3.308 1.674 0 3.365-.512 4.82-1.585l58.932-43.455c3.609-2.666 4.381-7.755 1.715-11.364-2.683-3.617-7.763-4.381-11.372-1.723zM358.161 61.699c-3.609 2.666-4.381 7.755-1.715 11.364 1.593 2.162 4.056 3.308 6.552 3.308 1.674 0 3.365-.52 4.82-1.585l52.746-38.887c3.609-2.666 4.381-7.755 1.715-11.364-2.666-3.609-7.747-4.389-11.364-1.715l-52.754 38.879zM454.217 156.933h-62.175c-4.495 0-8.129 3.642-8.129 8.129s3.633 8.129 8.129 8.129h62.175c4.495 0 8.129-3.642 8.129-8.129s-3.634-8.129-8.129-8.129zM80.416 165.062c0-4.487-3.633-8.129-8.129-8.129H8.129c-4.495 0-8.129 3.642-8.129 8.129s3.633 8.129 8.129 8.129h64.159c4.486-.001 8.128-3.642 8.128-8.129z"/></g></svg>
-                            <span class="d-block projects-label m-auto">Projeto de Viabilidade</span>
+                            <span class="d-block projects-label m-auto">Estudo de Viabilidade</span>
                     </a>
                 </div>
             </div>
@@ -188,7 +175,7 @@
                 <div class="row">
                     <div class="text-project col-xl-5 col-12">
                         <h3>Projeto Arquitetônico</h3>
-                        <p>Imaginação, visão, experiência e técnica combinados  para oferecer o melhor custo benefício e execução do mercado.</p>
+                        <p>Criatividade, visão, experiência e técnica combinados  para oferecer o melhor custo benefício e execução do mercado.</p>
                         <p>Projetos que transbordam originalidade, sempre buscando a melhor forma de concretizar os desejos de nossos clientes.</p>
                     </div>
                     <div class="col-12 col-xl-7 order-xl-first px-0 pr-xl-3 ">
@@ -201,11 +188,18 @@
                 <div class="row">
                     <div class="text-project col-xl-5 col-12">
                         <h3>Projeto Estrutural</h3>
-                        <p>Projetos estruturais bem desenvolvidos que resistem aos esforços solicitados, somado à economia, aproveitamento de materiais e eficiência na execução.</p>
                         <p>Desenvolvemos projetos estruturais em concreto armado, em aço e em alvenaria estrutural.</p>
+                        <p>Um projeto estrutural bem desenvolvido não é simplesmente aquele
+                                em que a estrutura resiste aos esforços que é solicitada, mas sim
+                                aquele que apresenta isso somado a maior economia, melhor
+                                aproveitamento dos materiais e facilidade na execução.</p>
+                        <p>Na Petinari Engenharia, nós nos preocupamos com tudo isso, faça
+                                o projeto estrutural da sua obra conosco e economize dinheiro.
+                                Deixe a estrutura da sua obra ser pensada por alguém que entende
+                                e que se preocupa com seu bolso.</p>
                     </div>
                     <div class="col-12 col-xl-7 order-xl-first px-0 pr-xl-3 ">
-                        <img class="img-fluid" src="img/pj-arquitetonico.jpg" alt="">
+                        <img class="img-fluid" src="img/projeto_estrutural.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -217,7 +211,7 @@
                         <p>Na Petinari Engenharia você encontra toda infraestrutura necessária para ter os projetos complementares requeridos na sua construção. Desde o projeto arquitetônico, até o projeto de estruturas, elétrico e hidráulico. Todos estes serviços com total comodidade e compatibilidade a proposta do cliente.</p>
                     </div>
                     <div class="col-12 col-xl-7 order-xl-first px-0 pr-xl-3">
-                        <img class="img-fluid" src="img/pj-arquitetonico.jpg" alt="">
+                        <img class="img-fluid" src="img/projeto_hidraulico.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -225,13 +219,13 @@
             <div class="slick-projects-item container-fluid">
                 <div class="row">
                     <div class="text-project col-xl-5 col-12">
-                        <h3>Projeto de Viabilidade</h3>
+                        <h3>Estudo de Viabilidade</h3>
                         <p>Quer saber quanto seu empreendimento vai custar?</p>
                         <p>qual metodologia construtiva e modelo estrutural resultarão no menor custo e tempo?</p>
                         <p>Faça um estudo de viabilidade conosco, nós temos a solução para você.</p>
                     </div>
                     <div class="col-12 col-xl-7 order-xl-first px-0 pr-xl-3">
-                        <img class="img-fluid" src="img/pj-arquitetonico.jpg" alt="">
+                        <img class="img-fluid" src="img/projeto_viabilidade.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -243,16 +237,24 @@
     <section class="section-construction" id="section-construction">
         <div class="container-fluid">
             <div class="row overkill" >
-                <div class="col-12 col-xl-6 construction-text" data-aos="fade-right">
+                <div class="col-12 col-xl-6 construction-text" data-aos="fade-right" data-aos-delay="400">
                     <h2 class="text-uppercase underline mb-3">Gerenciamento e Construção</h2>
                     <p>Oferecemos todos os serviços para sua obra!</p>
-                    <p>Conosco  você pode construir com preço fechado e chave na mão, ou somente contratar nossos serviços de gerenciamento. ​Garantimos eficiência, comprometimento e qualidade técnica.da construção, respeitando o orçamento e cronograma.</p>
-                    <p>Além disso, acompanhamos de perto toda a construção, contamos com profissionais competentes, projetos bem detalhados em um planejamento físico financeiro bem elaborado.</p>
+                    <p>Conosco  você pode construir com preço fechado e chave na mão, ou somente contratar nossos serviços de gerenciamento. ​Garantimos eficiência, comprometimento e qualidade técnica, respeitando o orçamento e o cronograma.</p>
+                    <p>Além disso, contamos com profissionais competentes, projetos bem detalhados em um planejamento físico financeiro bem elaborado.</p>
                 </div>
                 <div class="col-xl-6 px-0 pl-xl-3" data-aos="fade-left">
                     <div class="slick-construction">
-                        <img class="img-fluid rounded-right" src="img/daylight-door-handle-1166415.jpg" alt="">
-                        <img class="img-fluid rounded-right" src="img/close-up-door-focus-101808.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/gc-1.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/gc-2.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/gc-3.jpg" alt="">                
+                        <img class="img-fluid rounded-right" src="img/gc-4.jpg" alt="">                
+                        <img class="img-fluid rounded-right" src="img/gc-5.jpg" alt="">                
+                        <img class="img-fluid rounded-right" src="img/gc-6.jpg" alt="">                
+                        <img class="img-fluid rounded-right" src="img/gc-port-1.jpg" alt="">                
+                        <img class="img-fluid rounded-right" src="img/gc-port-2.jpg" alt="">                
+                        <img class="img-fluid rounded-right" src="img/pae-4.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/pae-6.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -263,10 +265,11 @@
         <div class="container-fluid">
             <div class="row overkill">
 
-                <div class="col-xl-6 myhouse-text" data-aos="fade-left">
+                <div class="col-xl-6 myhouse-text" data-aos="fade-left" data-aos-delay="400">
                     <h2 class="text-uppercase underline mb-3 ">Minha casa, Minha vida</h2>
                     <p>O sonho da sua casa própria pode virar realidade! </p>
-                    <p> Nós viabilizamos o seu sonho de  adquirir  a casa própria através do financiamento da Caixa Econômica Federal. Com juros facilitados, subsídio e parcelas no valor de um aluguel que decaem com o passar do tempo.</p>
+                    <p>Viabilizamos o seu sonho de  adquirir  a casa própria através do financiamento da Caixa Econômica Federal. Com juros facilitados, subsídio e parcelas no valor de um aluguel que decaem com o passar do tempo.</p>
+                    <p>Não perca tempo, venha morar no que é seu!</p>
                     <div class="row align-items-center">
                         <div class="col-xl-4 text-center p-0">
                             <img src="img/logo-minhacasa.png" alt="" class="myhouse-img">
@@ -279,13 +282,22 @@
                                 <li>Serviços e materiais de qualidade</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> 
                 </div>
 
-                <div class="col-xl-6 px-0 pr-xl-3 order-xl-first roundend-left" data-aos="fade-right">
+                <div class="col-xl-6 px-0 pr-xl-3 order-xl-first" data-aos="fade-right" >
                     <div class="slick-construction">
-                        <img class="img-fluid rounded-left" src="img/daylight-door-handle-1166415.jpg" alt="">
-                        <img class="img-fluid rounded-left" src="img/close-up-door-focus-101808.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-1.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-2.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-3.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-4.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-9.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-5.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-6.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-7.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-8.jpg" alt="">
+                        <img class="img-fluid rounded-right" src="img/myhouse-10.jpg" alt="">
+
                     </div>
                 </div>
             </div>
@@ -302,8 +314,120 @@
 
                 <div class="col-12 mb-4 px-0 px-xl-4" data-aos="fade-up">
                     <div class="slick-portfolio m-auto">
-                        <img class="img-fluid" src="img/builders-building-construction-159306.jpg" alt="">
-                        <img class="img-fluid" src="img/builders-building-construction-159306.jpg" alt="">
+                    
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/p-1.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                            </figure>
+                        </div>
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/p-2.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                            </figure>
+                        </div>
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/p-3.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                            </figure>
+                        </div>
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/p-4.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                            </figure>
+                        </div>
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/p-5.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                            </figure>
+                        </div>
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/p-6.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                            </figure>
+                        </div>
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/p-7.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                            </figure>
+                        </div>
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/go-integrato-1.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                            </figure>
+                        </div>
+
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/go-integrato-2.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="portfolio-image-container">
+                            <figure>
+                                <img class="m-auto img-fluid" src="img/pae-1.jpg" alt="">
+                                <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="portfolio-image-container">
+                        <figure>
+                            <img class="m-auto img-fluid" src="img/pae-2.jpg" alt="">
+                            <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                        </figure>
+
+                        </div>
+                        <div class="portfolio-image-container">
+                        <figure>
+                            <img class="m-auto img-fluid" src="img/pae-3.jpg" alt="">
+                            <figcaption class="text-center m-2">lorem Ipsum dolor sit amet</figcaption>
+
+                        </figure>
+
+                        </div>
+                        <div class="portfolio-image-container">
+                        <figure>
+                            <img class="m-auto img-fluid" src="img/pae-5.jpg" alt="">
+                            <figcaption>lorem Ipsum dolor sit amet</figcaption>
+
+                        </figure>
+    
+                        </div>
+                        
+                        <div class="portfolio-image-container">
+                        <figure>
+                                <img class="img-fluid rounded-right" src="img/gc-port-1.jpg" alt="">                
+                            <figcaption>lorem Ipsum dolor sit amet</figcaption>
+
+                        </figure>
+
+                        </div>
+                        
+                        <div class="portfolio-image-container">
+                        <figure>
+                                <img class="img-fluid rounded-right" src="img/gc-port-2.jpg" alt=""> 
+                            <figcaption>lorem Ipsum dolor sit amet</figcaption>
+                        </figure>
+
+                        </div>
+                    
                     </div>
                 </div>
 
@@ -323,25 +447,33 @@
                 </div>
            </div>
 
-           <div class="row py-4 text-center justify-content-center">
+           <div class="row py-xl-4 text-center justify-content-center">
 
 
                <div class="col-12">
+                   <div class="row">
+                       <div class="col-12 col-xl-4 mt-2">
+                           <a class=" text-left"   href="mailto:calcantarapetinari@gmail.com" target="_blank">
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.001 330.001"><path d="M173.871 177.097a14.982 14.982 0 0 1-8.87 2.903 14.98 14.98 0 0 1-8.871-2.903L30 84.602.001 62.603 0 275.001c.001 8.284 6.716 15 15 15L315.001 290c8.285 0 15-6.716 15-14.999V62.602l-30.001 22-126.129 92.495z"/><path d="M165.001 146.4L310.087 40.001 19.911 40z"/></svg>
+                               <span class="d-block text-center">calcantarapetinari@gmail.com</span>
+                           </a>
+                       </div>
+                       <div class="col-12 col-xl-4 mt-2">
+                           <a class=" text-left"  href="https://www.facebook.com/Petinari-Engenharia-191458525061675/" target="_blank">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 30 30"><path d="M24 4H6a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h10v-9h-3v-3h3v-1.611C16 9.339 17.486 8 20.021 8c1.214 0 1.856.09 2.16.131V11h-1.729C19.376 11 19 11.568 19 12.718V14h3.154l-.428 3H19v9h5a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>
+                               <span class="d-block text-center">Carol Petinari</span>
+                           </a>
+                       </div>
+                       <div class="col-12 col-xl-4 mt-2">
+                            <a class=" text-left"  href="https://www.instagram.com/petinari.engenharia/" target="_blank">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 50 50"><path d="M16 3C8.83 3 3 8.83 3 16v18c0 7.17 5.83 13 13 13h18c7.17 0 13-5.83 13-13V16c0-7.17-5.83-13-13-13H16zm21 8c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-12 3c6.07 0 11 4.93 11 11s-4.93 11-11 11-11-4.93-11-11 4.93-11 11-11zm0 2c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9z"/></svg>
+                               <span class="d-block text-center">@petinari.engenharia</span>
+                           </a>
+                       </div>
+                       
+                   </div>
 
-                    <a class="d-block text-left"  href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.001 330.001"><path d="M173.871 177.097a14.982 14.982 0 0 1-8.87 2.903 14.98 14.98 0 0 1-8.871-2.903L30 84.602.001 62.603 0 275.001c.001 8.284 6.716 15 15 15L315.001 290c8.285 0 15-6.716 15-14.999V62.602l-30.001 22-126.129 92.495z"/><path d="M165.001 146.4L310.087 40.001 19.911 40z"/></svg>
-                        <span class="">exemplo</span>
-                    </a>
 
-                    <a class="d-block text-left" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 30 30"><path d="M24 4H6a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h10v-9h-3v-3h3v-1.611C16 9.339 17.486 8 20.021 8c1.214 0 1.856.09 2.16.131V11h-1.729C19.376 11 19 11.568 19 12.718V14h3.154l-.428 3H19v9h5a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>
-                        <span class="">Carol Petinari</span>
-                    </a>
-
-                    <a class="d-block text-left" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 50 50"><path d="M16 3C8.83 3 3 8.83 3 16v18c0 7.17 5.83 13 13 13h18c7.17 0 13-5.83 13-13V16c0-7.17-5.83-13-13-13H16zm21 8c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-12 3c6.07 0 11 4.93 11 11s-4.93 11-11 11-11-4.93-11-11 4.93-11 11-11zm0 2c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9z"/></svg>
-                        <span class="">@Petinari</span>
-                    </a>
 
                </div>
 
@@ -352,14 +484,11 @@
 
 </main>
 <footer>
-    <p class="text-right">desenvolvido por Branco</p>
+    <p class="text-center mb-0">Desenvolvido por <a href="mailto:rrochadeazevedo@gmail.com">Branco</a></p>
 </footer>
 </body>
 
-<script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
-<script src="../node_modules/aos/dist/aos.js"></script>
+ <script src="js/index.min.js"></script>
 <script src="js/index.js"></script>
 
 </html>
