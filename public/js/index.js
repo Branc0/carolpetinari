@@ -3,33 +3,42 @@ $(".slick-header").slick({
     autoplay: true,
     autoplaySpeed: 5000,
     dots:false,
-    infinite: true
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
 })
 
 $(".slick-projects").slick({
-    lazyLoad: 'ondemand',
+    lazyLoad: 'progressive',
     infinite: true,
     arrows:false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
    // fade:true,
    // speed:1000
 })
 
 $(".slick-construction").slick({
-    lazyLoad: 'ondemand',
+    lazyLoad: 'progressive',
     infinite: true,
     arrows:true,
-    dots:true
+    dots:true,
+    slidesToShow: 1,
+    slidesToScroll: 1
 });
 
 $(".slick-myhouse").slick({
-    lazyLoad: 'ondemand',
+    lazyLoad: 'progressive',
     infinite: true,
     arrows:true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     dots:true
+
 });
 
 $('.slick-portfolio').slick({
-    lazyLoad: 'ondemand',
+    lazyLoad: 'progressive',
     infinite: true,
     arrows:true,
     dots:true,

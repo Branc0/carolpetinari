@@ -198,8 +198,6 @@ main img {
         content: "✓ ";
         color: green;
         /* or whatever color you prefer */ }
-  .section-myhouse img {
-    height: 440px; }
 
 .section-portfolio .underline::after {
   left: 50%;
@@ -209,8 +207,6 @@ main img {
   @media (max-width: 1200px) {
     .section-portfolio .slick-portfolio {
       width: 100%; } }
-.section-portfolio img {
-  height: 80vh; }
 
 .section-contact {
   padding: 0 20%; }
