@@ -7,6 +7,7 @@ $(".slick-header").slick({
 })
 
 $(".slick-projects").slick({
+    lazyLoad: 'ondemand',
     infinite: true,
     arrows:false,
    // fade:true,
@@ -14,18 +15,21 @@ $(".slick-projects").slick({
 })
 
 $(".slick-construction").slick({
+    lazyLoad: 'ondemand',
     infinite: true,
     arrows:true,
     dots:true
 });
 
 $(".slick-myhouse").slick({
+    lazyLoad: 'ondemand',
     infinite: true,
     arrows:true,
     dots:true
 });
 
 $('.slick-portfolio').slick({
+    lazyLoad: 'ondemand',
     infinite: true,
     arrows:true,
     dots:true,
