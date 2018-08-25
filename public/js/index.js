@@ -6,7 +6,7 @@ $(".slick-header").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-})
+});
 
 $(".slick-projects").slick({
     lazyLoad: 'progressive',
@@ -16,13 +16,13 @@ $(".slick-projects").slick({
     slidesToScroll: 1,
    // fade:true,
    // speed:1000
-})
+});
 
 $(".slick-construction").slick({
     lazyLoad: 'progressive',
     infinite: true,
     arrows:true,
-    dots:true,
+    dots:false,
     slidesToShow: 1,
     slidesToScroll: 1
 });
@@ -33,7 +33,7 @@ $(".slick-myhouse").slick({
     arrows:true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots:true
+    dots:true,
 
 });
 
@@ -41,9 +41,9 @@ $('.slick-portfolio').slick({
     lazyLoad: 'progressive',
     infinite: true,
     arrows:true,
-    dots:true,
+    dots:false,
     fade: true,
-})
+});
 
 $('.a-collapse').click(function() {
     if($(this).find("span").hasClass("rotate")){
@@ -80,7 +80,7 @@ $('a[href*="#"]').not('[href="#0"]').click(function(event) {
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+          }
         });
       }
     }
@@ -94,8 +94,8 @@ $(document).ready(function(){
 
 $(".menu-projects a").click(function(e){
     e.preventDefault();
-    $(".active-project").removeClass("active-project")
-    $(this).addClass("active-project")
+    $(".active-project").removeClass("active-project");
+    $(this).addClass("active-project");
     let slideIndex = $(this).attr('id');
     $( '.slick-projects' ).slick('slickGoTo',parseInt(slideIndex) ); 
 });
@@ -104,4 +104,4 @@ $(".nav-link").click(function(){
     $(".navbar-toggler").click();
 });
 
-})
+});
